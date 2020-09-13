@@ -1,8 +1,8 @@
-﻿using ShopBankSolution.Data.Enums;
+﻿using ShopBankSolution.Data.Entities;
+using ShopBankSolution.Data.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Transactions;
 
 namespace ShopBankSolution.Data.Entities
 {
@@ -15,9 +15,11 @@ namespace ShopBankSolution.Data.Entities
         public decimal Fee { set; get; }
         public string Result { set; get; }
         public string Message { set; get; }
-        public Enums.TransactionStatus Status { set; get; }
+        public TransactionStatus Status { set; get; }
         public string Provider { set; get; }
+
         public Guid UserId { get; set; }
+
         public AppUser AppUser { get; set; }
 
     }

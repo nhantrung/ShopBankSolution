@@ -1,6 +1,6 @@
 ﻿using ShopBankSolution.Data.Configurations;
 using ShopBankSolution.Data.Entities;
-//using ShopBankSolution.Data.Extensions;
+using ShopBankSolution.Data.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -53,8 +53,8 @@ namespace ShopBankSolution.Data.EntitiFranework
             modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
 
                 //Data seeding
-                //modelBuilder.Seed();
-                //base.OnModelCreating(modelBuilder);
+               modelBuilder.Seed();
+               base.OnModelCreating(modelBuilder);
             }
 
             public DbSet<Product> Products { get; set; }

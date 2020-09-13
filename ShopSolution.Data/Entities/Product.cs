@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace ShopBankSolution.Data.Entities
 {
-   public class Product
+    public class Product
     {
         public int Id { set; get; }
         public decimal Price { set; get; }
@@ -12,6 +13,7 @@ namespace ShopBankSolution.Data.Entities
         public int Stock { set; get; }
         public int ViewCount { set; get; }
         public DateTime DateCreated { set; get; }
+
         public bool? IsFeatured { get; set; }
 
         public List<ProductInCategory> ProductInCategories { get; set; }

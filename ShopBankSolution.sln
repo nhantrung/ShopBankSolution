@@ -4,15 +4,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBankSolution.Webapp", "ShopBankSolution.Webapp\ShopBankSolution.Webapp.csproj", "{002628F2-081A-4ED4-BDF4-1FD60D3E4594}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8371750B-A6C7-48B9-9EF0-4EBEDFD15FA8} = {8371750B-A6C7-48B9-9EF0-4EBEDFD15FA8}
+		{1259C51F-B1E3-47BD-8C3C-F8A89F91B943} = {1259C51F-B1E3-47BD-8C3C-F8A89F91B943}
+		{D4BA2E6A-A774-4917-823E-86ED015FB0C1} = {D4BA2E6A-A774-4917-823E-86ED015FB0C1}
+		{52A8FABE-96A0-4DB8-AB16-F300A9EB458D} = {52A8FABE-96A0-4DB8-AB16-F300A9EB458D}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61ABDB53-0AAD-4B45-A837-E7AB97948E7D}"
 	ProjectSection(SolutionItems) = preProject
 		README.txt = README.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBankSolution.Data", "ShopSolution.Data\ShopBankSolution.Data.csproj", "{D4BA2E6A-A774-4917-823E-86ED015FB0C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBankSolution.Data", "ShopSolution.Data\ShopBankSolution.Data.csproj", "{D4BA2E6A-A774-4917-823E-86ED015FB0C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBankSolution.Aplication", "ShopBankSolution.Aplication\ShopBankSolution.Aplication.csproj", "{8371750B-A6C7-48B9-9EF0-4EBEDFD15FA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBankSolution.Aplication", "ShopBankSolution.Aplication\ShopBankSolution.Aplication.csproj", "{8371750B-A6C7-48B9-9EF0-4EBEDFD15FA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBankSolution.ViewModels", "ShopBankSolution.ViewModels\ShopBankSolution.ViewModels.csproj", "{52A8FABE-96A0-4DB8-AB16-F300A9EB458D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBankSolution.Utilities", "ShopBankSolution.Utilities\ShopBankSolution.Utilities.csproj", "{1259C51F-B1E3-47BD-8C3C-F8A89F91B943}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBankSolution.WebApi", "ShopBankSolution.WebApi\ShopBankSolution.WebApi.csproj", "{7A97F050-607D-401E-86F2-FCBCA8CBE40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBankSolution.AdminApp", "ShopBankSolution.AdminApp\ShopBankSolution.AdminApp.csproj", "{FF4069DE-803D-4E3C-9876-BACE794491F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBankSolution.ApiIntegration", "ShopBankSolution.ApiIntegration\ShopBankSolution.ApiIntegration.csproj", "{1574E452-C255-4849-98A6-879A0FBB21F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +48,26 @@ Global
 		{8371750B-A6C7-48B9-9EF0-4EBEDFD15FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8371750B-A6C7-48B9-9EF0-4EBEDFD15FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8371750B-A6C7-48B9-9EF0-4EBEDFD15FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A8FABE-96A0-4DB8-AB16-F300A9EB458D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A8FABE-96A0-4DB8-AB16-F300A9EB458D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A8FABE-96A0-4DB8-AB16-F300A9EB458D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A8FABE-96A0-4DB8-AB16-F300A9EB458D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1259C51F-B1E3-47BD-8C3C-F8A89F91B943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1259C51F-B1E3-47BD-8C3C-F8A89F91B943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1259C51F-B1E3-47BD-8C3C-F8A89F91B943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1259C51F-B1E3-47BD-8C3C-F8A89F91B943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A97F050-607D-401E-86F2-FCBCA8CBE40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A97F050-607D-401E-86F2-FCBCA8CBE40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A97F050-607D-401E-86F2-FCBCA8CBE40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A97F050-607D-401E-86F2-FCBCA8CBE40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4069DE-803D-4E3C-9876-BACE794491F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4069DE-803D-4E3C-9876-BACE794491F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4069DE-803D-4E3C-9876-BACE794491F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4069DE-803D-4E3C-9876-BACE794491F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1574E452-C255-4849-98A6-879A0FBB21F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1574E452-C255-4849-98A6-879A0FBB21F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1574E452-C255-4849-98A6-879A0FBB21F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1574E452-C255-4849-98A6-879A0FBB21F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
