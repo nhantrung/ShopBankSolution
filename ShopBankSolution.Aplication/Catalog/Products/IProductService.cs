@@ -40,5 +40,9 @@ namespace ShopBankSolution.Application.Catalog.Products
         Task<ApiResult<bool>> CategoryAssign(int id, CategoryAssignRequest request);
 
         Task<List<ProductVm>> GetFeaturedProducts(string languageId, int take);
+
+        //GetLatestProducts
+
+        Task<List<ProductVm>> GetLatestProducts(string languageId, int take);
     }
 }
